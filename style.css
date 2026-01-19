@@ -1,14 +1,6 @@
 
 /* ================= NAVIGATION BAR ================= */
 
-.navbar .logo {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #f1c40f;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
 .navbar .nav-links {
   list-style: none;
   display: flex;
@@ -1527,6 +1519,7 @@ body {
   z-index: 9999;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   transition: background 0.3s ease, padding 0.3s ease;
+
 }
 
 .navbar .logo {
@@ -1581,4 +1574,25 @@ body {
   }
 }
 
+.navbar .logo img {
+  height: 80px;
+  width: 70px;
+  border-radius: 3em;
+  font-size: 3em;
+  
+}
 
+/* FORCE NAV BUTTONS TO SHOW ON WEBSITE */
+
+@media (max-width: 768) {
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+.navbar .logo {
+  width: 100%;
+  text-align: center;
+  
+}
